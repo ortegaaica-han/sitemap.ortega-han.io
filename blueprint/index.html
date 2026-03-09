@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomechanics & Ethics Sitemap Layout</title>
+    <style>
+        /* CSS STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 1.5rem 1.2rem;
+            color: #bbb;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #00ffcc;
+            background: #222;
+        }
+
+        /* Mega Menu Dropdown */
+        .mega-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #1a1a1a;
+            width: 280px;
+            padding: 1rem;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .nav-item:hover .mega-menu {
+            display: block;
+        }
+
+        .mega-menu a {
+            display: block;
+            color: #999;
+            text-decoration: none;
+            padding: 0.7rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+
+        .mega-menu a:hover {
+            background-color: #252525;
+            color: #00ffcc;
+            padding-left: 1.5rem;
+        }
+
+        /* Content Section */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #00ffcc;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link">The Cluster</a>
+                <div class="mega-menu">
+                    <a href="#">Wrist and Forearm</a>
+                    <a href="#">Head and Neck</a>
+                    <a href="#">Torso and Smart Fabrics</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Feedback</a>
+                <div class="mega-menu">
+                    <a href="#">Haptic Reconditioning</a>
+                    <a href="#">Gait and Lower Limb</a>
+                    <a href="#">Psychology of Ergonomics</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Case Studies</a>
+                <div class="mega-menu">
+                    <a href="#">Industrial/Exoskeletons</a>
+                    <a href="#">Athletic Performance</a>
+                    <a href="#">Medical/Rehabilitative</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Engineering</a>
+                <div class="mega-menu">
+                    <a href="#">Material Science</a>
+                    <a href="#">Power and Heat</a>
+                    <a href="#">Anthropometrics</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Ethics</a>
+                <div class="mega-menu">
+                    <a href="#">Neural Interfaces</a>
+                    <a href="#">Evolutionary Impact</a>
+                    <a href="#">Regulatory Landscape</a>
+                </div>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Advanced Biomechanics</h1>
+        <p>Exploring the intersection of human physiology, material science, and neural interfaces.</p>
+    </header>
+
+</body>
+</html>
